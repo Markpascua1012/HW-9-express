@@ -4,7 +4,7 @@
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
 
-var friendData = require("../data/friends");
+var friends = require("../data/friends");
 
 
 
@@ -20,7 +20,7 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
 
   app.get("/api/friends", function(req, res) {
-    res.json(friendData);
+    res.json(friends);
   });
 
 
@@ -37,25 +37,42 @@ module.exports = function(app) {
     // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
     // It will do this by sending out the value "true" have a table
     // req.body is available since we're using the body parsing middleware
-    if (tableData.length < 5) {
-      tableData.push(req.body);
-      res.json(true);
+  var bestMatch = {
+    name : "",
+    photo : "",
+    friendDifference : 1000
+  };
+
+  console.log(req.body);
+  var userData = req.body;
+  var userScores = userData.scores;
+
+  console.log(userScores);
+
+  var totalDifference = 0
+
+  for(var i = 0; i < friends.length; i++){
+    console.log(friends[i]);
+    totalDifference = 0
+
+    for(var m = 0; m< friends[i].scores[m]; m++){
+      totalDifference += Math.abs(parseInt(userScores[m])-parseInt(friends[i].scores[m]));
+
+      if (totalDifference <= bestMatch.friendDifference){
+        bestMatch.name = friends[i].name;
+        bestMatch.photo = friends[i].photo;
+        bestMatch.friendDifference = totalDifference;
+      }
     }
-    else {
-      waitListData.push(req.body);
-      res.json(false);
-    }
+  }
+  friends.push(userData);
+
+  res.json(bestMatch);
   });
 
   // ---------------------------------------------------------------------------
   // I added this below code so you could clear out the table while working with the functionality.
   // Don"t worry about it!
 
-  app.post("/api/clear", function(req, res) {
-    // Empty out the arrays of data
-    tableData.length = 0;
-    waitListData.length = 0;
 
-    res.json({ ok: true });
-  });
 };

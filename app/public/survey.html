@@ -1,170 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Survey</title>
 </head>
+
 <body>
 
-<div class="container">
-    <h1>
-    Survey!
-    </h1>
-<h2> Name (required) </h2>
-<input type="text" name="" id="name" class="form-control" required>
+    <div class="container">
+        <h1>
+            Survey!
+        </h1>
+        <h2> Name (required) </h2>
+        <input type="text" name="" id="name" class="form-control" required>
 
-<br>
+        <br>
 
-<h2>Link a photo image of yourself required</h2>
-<input type="text" name="" id="photo" class="form-control" required>
+        <h2>Link a photo image of yourself required</h2>
+        <input type="text" name="" id="photo" class="form-control" required>
 
-<hr>
+        <hr>
 
-<h3> <strong>Question 1</strong></h3>
-<h4>question blah blah blah</h4>
-<select data-placeholder="" class="chosen-selct" id="q1">
-    <option value=""></option>
-    <option value="1">1 (Strongly Disagree)</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5 (Strongly Agree</option>
-</select>
+        <h3> <strong>Question 1</strong></h3>
+        <h4>You are a very calm person</h4>
+        <select data-placeholder="" class="chosen-selct" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
 
-<br>
+        <br>
 
-<h3> <strong>Question 1</strong></h3>
-<h4>question blah blah blah</h4>
-<select data-placeholder="" class="chosen-selct" id="q1">
-    <option value=""></option>
-    <option value="1">1 (Strongly Disagree)</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5 (Strongly Agree</option>
-</select>
+        <h3> <strong>Question 2</strong></h3>
+        <h4>You want to be the best!</h4>
+        <select data-placeholder="" class="chosen-selct" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
 
-<br>
+        <br>
 
-<h3> <strong>Question 1</strong></h3>
-<h4>question blah blah blah</h4>
-<select data-placeholder="" class="chosen-selct" id="q1">
-    <option value=""></option>
-    <option value="1">1 (Strongly Disagree)</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5 (Strongly Agree</option>
-</select>
+        <h3> <strong>Question 3</strong></h3>
+        <h4>You have raw talent rather then hard work</h4>
+        <select data-placeholder="" class="chosen-selct" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
 
-<br>
+        <br>
 
-<h3> <strong>Question 1</strong></h3>
-<h4>question blah blah blah</h4>
-<select data-placeholder="" class="chosen-selct" id="q1">
-    <option value=""></option>
-    <option value="1">1 (Strongly Disagree)</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5 (Strongly Agree</option>
-</select>
+        <h3> <strong>Question 4</strong></h3>
+        <h4>You have big dreams</h4>
+        <select data-placeholder="" class="chosen-selct" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
 
-<br>
+        <br>
 
-<h3> <strong>Question 1</strong></h3>
-<h4>question blah blah blah</h4>
-<select data-placeholder="" class="chosen-selct" id="q1">
-    <option value=""></option>
-    <option value="1">1 (Strongly Disagree)</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5 (Strongly Agree</option>
-</select>
+        <h3> <strong>Question 5</strong></h3>
+        <h4>You eat alot!</h4>
+        <select data-placeholder="" class="chosen-selct" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
 
-<br>
+        <br>
 
-<h3> <strong>Question 1</strong></h3>
-<h4>question blah blah blah</h4>
-<select data-placeholder="" class="chosen-selct" id="q1">
-    <option value=""></option>
-    <option value="1">1 (Strongly Disagree)</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5 (Strongly Agree</option>
-</select>
+        <h3> <strong>Question 6</strong></h3>
+        <h4>People often underestimate you</h4>
+        <select data-placeholder="" class="chosen-selct" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
 
-<br>
+        <br>
 
-<h3> <strong>Question 1</strong></h3>
-<h4>question blah blah blah</h4>
-<select data-placeholder="" class="chosen-selct" id="q1">
-    <option value=""></option>
-    <option value="1">1 (Strongly Disagree)</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5 (Strongly Agree</option>
-</select>
+        <h3> <strong>Question 7</strong></h3>
+        <h4>Your friends are very important to you</h4>
+        <select data-placeholder="" class="chosen-selct" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
 
-<br>
+        <br>
 
-<h3> <strong>Question 1</strong></h3>
-<h4>question blah blah blah</h4>
-<select data-placeholder="" class="chosen-selct" id="q1">
-    <option value=""></option>
-    <option value="1">1 (Strongly Disagree)</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5 (Strongly Agree</option>
-</select>
+        <h3> <strong>Question 8</strong></h3>
+        <h4>You like to have fun with whatever you do</h4>
+        <select data-placeholder="" class="chosen-selct" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
 
-<br>
+        <br>
 
-<h3> <strong>Question 1</strong></h3>
-<h4>question blah blah blah</h4>
-<select data-placeholder="" class="chosen-selct" id="q1">
-    <option value=""></option>
-    <option value="1">1 (Strongly Disagree)</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5 (Strongly Agree</option>
-</select>
+        <h3> <strong>Question 9</strong></h3>
+        <h4>You have a complicated past</h4>
+        <select data-placeholder="" class="chosen-selct" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree</option>
+        </select>
 
-<br>
+        <br>
 
-<h3> <strong>Question 1</strong></h3>
-<h4>question blah blah blah</h4>
-<select data-placeholder="" class="chosen-selct" id="q1">
-    <option value=""></option>
-    <option value="1">1 (Strongly Disagree)</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5 (Strongly Agree</option>
-</select>
+        <h3> <strong>Question 10</strong></h3>
+        <h4>You like to make new friends</h4>
+        <select data-placeholder="" class="chosen-selct" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree</option>
+        </select>
 
-<br>
-<br>
+        <br>
+        <br>
 
-<button type="submit" class="btn btn-lg btn-primary" id="submit">
-    Submit
-</button>
-<footer class="footer">
-        <div class="container">
-            <p><a href="/api/friends">API friends Link</a> | <a href="#">Git hub Repo</a> 
+        <button type="submit" class="btn btn-lg btn-primary" id="submit">
+            Submit
+        </button>
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API friends Link</a> | <a href="#">Git hub Repo</a>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <div id="resModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">BEST MATCH</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h1 id="matchName"></h1>
+                    <img id="matchPhoto" src="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
         </div>
-    </footer>
-
-
-</div>
+    </div>
 </body>
+
+<script>
+    $("#submit").on("click", function () {
+
+        function validateForm() {
+            var isValid = true;
+            $(".form-control").each(function () {
+                if ($(this).val() === "") {
+                    isValid = false;
+                }
+            });
+            $(".chosen-select").each(function () {
+
+                if ($(this).val() === "") {
+                    isValid = false;
+                }
+            });
+            return isValid;
+        }
+
+        if (validateForm()) {
+
+            var userData = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val(),
+                ]
+            };
+
+            var currentURL = window.location.origin;
+            $.post(currentURL + "/api/friends", userData, function (data) {
+
+
+
+                $("#matchName").text(data.name);
+                $("#matchPhoto").attr("src", data.photo,);
+                $("#resModal").modal("toggle");
+
+            });
+        } else {
+            alert("please fill out the required fields")
+
+        }
+        return false;
+    });
+
+</script>
+
 </html>
